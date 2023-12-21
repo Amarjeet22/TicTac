@@ -28,10 +28,12 @@ boxes.forEach((box)=>{
             box.classList.add("x");
             box.innerText ="x";
             turn0 =false;
+            box.classList.remove("o");
         }else{
             box.classList.add("o");
             box.innerText = "o";
             turn0 =true;
+            box.classList.remove("x");
         }
         box.disabled=true; // it stop the change in 2nd time 
         checkWiner();
